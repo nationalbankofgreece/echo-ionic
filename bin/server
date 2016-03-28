@@ -1,5 +1,5 @@
 #! /usr/bin/env sh
 
-${PATH:=3000}
+export PORT=${PORT:=3000}
 
 node_modules/.bin/browser-sync start --files "www/**" --directory --index index.html --port $PORT --server www
